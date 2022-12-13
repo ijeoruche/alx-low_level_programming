@@ -14,3 +14,4 @@ void print_alphabet_x10.c(void)
 			_putchar(la);
 		-putchar('\n');
 	}
+}
