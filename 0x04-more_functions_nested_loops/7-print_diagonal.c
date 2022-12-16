@@ -14,10 +14,15 @@ if (n >)
 for (line = 0; line < n; line++)
 {
 for (space = 0; space < line; space++)
+{
 _putchar(' ');
+}
 _putchar('\\');
+
 if (line == n - 1)
+{
 continue;
+}
 _putchar('\n');
 }
 }
