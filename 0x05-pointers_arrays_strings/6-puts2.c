@@ -15,8 +15,8 @@ char *y = str;
 int o;
 while (*y != '\0')
 {
-y++
-longi++
+y++;
+longi++;
 }
 t = longi - 1;
 for (o = 0 ; o <= t ; o++)
