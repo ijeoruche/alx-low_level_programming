@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcat - cancatennates two strings
@@ -11,24 +10,23 @@
 char *_strcat(char *dest, char *src)
 
 {
-	int length, b;
-
-	length = 0
+	int count = 0, count2 = 0
 
 while
-(dest[length] != '\0')
+(*(dest + count) != '\0')
 
 {
 
-	length++;
-
+	count++;
 }
-
-for
-(b = 0; src[b] != '\0'; b++, length++)
+while
+(count2 >= 0)
 {
-dest[length] = src[b];
+*(dest + count) = *(src + count2);
+if (*(src + count2) == '\0')
+	break;
+count++;
+count2++;
 }
-dest[length] = '\0';
 return (dest);
 }
