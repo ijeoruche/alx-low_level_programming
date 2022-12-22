@@ -3,28 +3,32 @@
 
 /**
  * _strcat - cancatennates two strings
- * @dest: copy to
- * @src: copy from
- * Return: pointer to dest
+ * @dest: first string
+ * @src: second string
+ * Return: pointer to dest string
  */
-char *_strcat(char *dest, char *src)
-{
-	int b;
-	int c;
 
-	b = 0;
-	while (dest[b] != '\0')
+char *_strcat(char *dest, char *src)
+
 {
-	b++;
-}
-c = 0;
-while (src[c]  != '\0')
+	int length, b;
+
+	length = 0
+
+while
+(dest[length] != '\0')
+
 {
-	dest[b] = src[c];
-	b++;
-	c++;
+
+	length++;
+
 }
-dest[b] = '\0';
+
+for
+(b = 0; src[b] != '\0'; b++, length++)
+{
+dest[length] = src[b];
+}
+dest[length] = '\0';
 return (dest);
 }
-
