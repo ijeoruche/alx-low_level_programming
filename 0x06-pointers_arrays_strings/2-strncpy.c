@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
- *
+ * _strncpy - joins two strings with n bytes
+ * @dest: copy to
+ * @src: copy from
+ * @n: number of char to be copied
  * Return: dest
  */
 
