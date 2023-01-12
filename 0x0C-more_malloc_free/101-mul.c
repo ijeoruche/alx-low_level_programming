@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-
 /**
  * _is_zero - determines if any number is zero
  * @argv: argument vector
@@ -95,7 +94,6 @@ int main(int argc, char *argv[])
 	k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 	for (; k >= 0; k--, i--)
 	{
-
 		if (i < 0)
 		{
 			if (addl > 0)
@@ -121,7 +119,6 @@ int main(int argc, char *argv[])
 			addl = add / 10, nout[k] = (add % 10) + '0';
 		}
 	}
-
 	printf("%s\n", nout);
 	return (0);
 }
