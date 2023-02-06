@@ -179,7 +179,7 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:                       %d\n",
+	printf("  ABI Version: 			%d\n",
 			e_ident[EI_ABIVERSION]);
 }
 
@@ -302,6 +302,6 @@ print_type(header->e_type, header->e_ident);
 print_entry(header->e_entry, header->e_ident);
 
 free(header);
-close_elf(0);
+close_elf(o);
 return (0);
 }
